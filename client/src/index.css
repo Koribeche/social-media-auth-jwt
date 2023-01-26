@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+svg {
+  margin-right: 5px;
+}
+
+.form {
+  width: 350px;
+  margin: auto;
+}
+
+.rounded-circle svg {
+  margin-right: 0px;
+}
+
+.google {
+  background-color: #df4930 !important;
+  color: white !important;
+}
+.facebook {
+  background-color: #507cc0 !important;
+  color: white !important;
+}
+.github {
+  background-color: black !important;
+  color: white !important;
+}
+
+.linkedin {
+  background-color: #0e76a8 !important;
+  color: white !important;
+}
+
+@media (max-width: 375px) {
+  .form {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.userpic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/*  Spinner  */
+
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #000 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
